@@ -1,0 +1,17 @@
+.tab-element {
+  list-style-type: none;
+  margin-right: 20px;
+  font-family: 'Roboto';
+  cursor: pointer;
+  outline: none;
+}
+
+.tab {
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+  outline: none;
+}
