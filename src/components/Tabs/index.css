@@ -8,10 +8,18 @@
 
 .tab {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
   color: #ffffff;
   background-color: transparent;
   border: 0px;
   cursor: pointer;
   outline: none;
+}
+
+.active-tab {
+  color: #fec653;
+  margin-bottom: 3px;
+  border-bottom: 2px solid #fec653;
+  padding-bottom: 5px;
+  font-size: 18px;
 }

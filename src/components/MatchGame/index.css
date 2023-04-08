@@ -5,25 +5,50 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   color: #ffffff;
   background-color: #2c0e3a;
   font-family: 'Roboto';
-  padding: 10px;
-  padding-right: 20px;
+  padding: 0px;
+  padding-right: 0px;
   position: fixed;
   top: 0;
   width: 100%;
 }
 
+.nav-items-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  .nav-items-container {
+    padding-left: 0px;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.nav-item {
+  list-style-type: none;
+  margin-left: 0px;
+}
+
 .game-logo {
-  width: 150px;
+  width: 140px;
   height: 40px;
+}
+
+@media screen and (max-width: 576px) {
+  .game-logo {
+    width: 135px;
+    height: 32px;
+  }
 }
 
 .score-timer-container {
@@ -46,6 +71,13 @@
   align-items: center;
   color: #fec653;
   font-weight: 500;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  .timer {
+    margin-right: 5px;
+  }
 }
 
 .timer-logo {
@@ -54,13 +86,32 @@
   margin-right: 8px;
 }
 
+@media screen and (max-width: 576px) {
+  .timer-logo {
+    margin-right: 5px;
+  }
+}
+
 .match-image-container {
   margin-top: 125px;
+}
+
+@media screen and (max-width: 576px) {
+  .match-image-container {
+    margin-top: 50px;
+  }
 }
 
 .match-image {
   width: 650px;
   height: 380px;
+}
+
+@media screen and (max-width: 576px) {
+  .match-image {
+    width: 380px;
+    height: 280px;
+  }
 }
 
 .tabs-container {
@@ -74,4 +125,10 @@
   flex-wrap: wrap;
   width: 50%;
   padding-left: 0px;
+}
+
+@media screen and (max-width: 576px) {
+  .thumbnails-container {
+    width: 100%;
+  }
 }
